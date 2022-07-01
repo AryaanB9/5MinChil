@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>5MinChil</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type = "text/css" href="popup.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=Source+Code+Pro:wght@200;300&display=swap" rel="stylesheet">
+    <script src="popup.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+    
+    
+  </head>
+
+  <body>
+    <div class="modal-header">
+      <h1 class="logo">
+        <img class="logo-icon" src="logo.png" />5MinChil
+        <small class="version">(1.0.0)</small>
+      </h1>
+    </div>
+    <div class="modal-content" id = "modal-content">
+      <p>It's OK to take a break!</p>
+    </div>
+    <script type="text/javascript">
+      
+      const text = baffle(".modal-content");
+      text.set({
+        characters:'██▒ >▒▒░▒ ▓▒▓▓> ▓▒░ █░█/░ ░▒▓░ /░█ ░▒░> █░█▒',
+        speed:100
+        });
+      text.start();
+      text.reveal(3000);
+    </script>
+
+    <div class="modal-icons">
+      <div class="flex-container">
+        <div class="flex">
+          <a href="https://www.patatap.com/" target="_blank">
+            <i class="fa fa-lightbulb-o" style="color:#064070 "></i>
+          </a>
+        </div>
+        <div class="flex">
+          <a href="https://agar.io/" target="_blank">
+            
+            <i class="fa fa-gamepad" style="color:#064070 "></i>
+          </a>
+        </div>
+        <div class="flex">
+          <a href="https://www.gnoosic.com/" target="_blank">
+            <i class="fa fa-music" style="color:#064070 "></i>
+          </a>
+        </div>
+        <div class="flex">
+          <a href="http://www.flashbynight.com/drench/" target="_blank">
+            <i class="fa fa-paint-brush" style="color:#064070 "></i>
+          </a>
+        </div>
+        <div class="flex">
+          <a href="https://www.linerider.com/" target="_blank">
+            <i class="fa fa-pencil" style="color:#064070 "></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
